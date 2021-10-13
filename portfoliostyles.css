@@ -1,0 +1,321 @@
+/* Universal Styles */
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+@font-face {
+    font-family: 'Urbanist', sans-serif;
+    src: url(https://fonts.google.com/specimen/Urbanist?query=Urbanist);
+}
+
+@font-face {
+    font-family: 'Abril Fatface', serif;
+    src: url(https://fonts.google.com/specimen/Abril+Fatface?query=abril+fatface);
+}
+
+
+
+/* Header */
+
+header{
+    font-family: 'Urbanist', sans-serif;
+    height: 100px;
+    background: white;
+
+} 
+
+#logo {
+display: inline;
+max-height: 100%;
+padding: 10px;
+}
+/* Banner */
+
+#sitetitle, .greeting {
+    font-family: 'Urbanist', sans-serif;
+    display: grid;
+    background-color: hsla(0, 0%, 0%, 0.75);
+    color: #FAF9F6;
+    padding: 5px 10px 10px 10px;
+    border-radius: 10px;
+
+}
+
+html {
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+}
+
+.greeting {
+    font-size: 42px;
+    font-weight: 400;
+    
+}
+main.banner {
+    font-family: 'Urbanist', sans-serif;
+    display: grid;
+    justify-content: center;
+    background-image:url(https://github.com/mossy5g/ericrosu/blob/main/resources/dundon%20BTS.jpeg);
+    background-blend-mode:screen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0%;
+    margin-top: 20px;
+    height: 101vh;
+    align-content: space-evenly;
+    
+}
+
+h1#sitetitle {
+    font-size: 95px;
+    font-weight: 700;
+    font-family: 'Urbanist';
+    color: #FAF9F6;
+    justify-self: center;
+}
+
+
+
+h2 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 32px;
+    justify-self: center;
+}
+
+h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 24px;
+    justify-self: left;
+    padding-left: 20px;
+}
+
+p#aboutme {
+    font-family: 'Urbanist', sans-serif;
+    justify-self: center;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.75);
+    border-radius: 10px;
+    font-size: 24px;
+    width: 80%;
+
+
+
+}
+
+p {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    color: black;
+    padding: 20px;  
+}
+/* Nav */
+
+div.nav {
+    display: inline-block;
+    margin-top: 30px;
+    float: right;
+}
+
+.nav a {
+    font-size: 28px;
+    text-shadow: 2px 2px rgb(243, 243, 243);
+    float: right;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+
+} 
+
+/* Projects */
+
+h2#projectsheader {
+    padding: 20px;
+    font-size: 42px;
+    text-shadow: 2px 2px rgb(241, 241, 241);
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav a:active {
+    color: #96268c;
+}
+
+#projects {
+    display: grid;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-items: center;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    background-color: white;
+    line-height: 2;
+}
+
+.dundonheader {
+    color: rgb(255, 136, 0);
+    font-size: 32px;
+    display: grid;
+}
+
+.dundonintro {
+    font-weight: 400;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-shadow: none;
+}
+
+iframe {
+    justify-self: center;
+    display: inline-block;
+    padding: 20px;
+}
+
+.dundonaero {
+    align-self: center;
+}
+
+.dundonvid1header {
+    display: grid;
+   
+}
+
+  
+  .column {
+    flex: 50%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  p {
+      text-shadow: none;
+      font-weight: 400
+      ;
+  }
+
+
+/* About Me */
+
+#itsme {
+    height: 100vh;
+    font-family: 'Urbanist', sans-serif;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+}
+
+#itsmeheader {
+    font-size: 42px;
+    padding-top: 20px;
+    
+}
+
+#profilepic {
+    height: 250px;
+    width: auto;
+    display: inline-block;
+    border-radius: 360px;
+    border: black 10px;
+}
+
+/* Contact */
+
+h2#contactheader {
+    padding: 30px 0px 20px 30px;
+    font-weight: 300;
+}
+
+#contact {
+    background-color: #FAF9F6;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    font-family: 'Urbanist', sans-serif;
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Urbanist', sans-serif;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+    font-family: 'Urbanist', sans-serif;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #FAF9F6;
+    width: 50%;
+    margin-left: 20px;
+    font-family: 'Urbanist', sans-serif;
+    padding: 20px;
+  }
+
+/* Footer */
+
+p footer {
+    float: left;
+    font-size: 16px;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+
+}
+
+footer {
+    font-family: 'Urbanist', sans-serif;
+    position: relative;
+    background-color: black;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.sitesignature, .copyright {
+    color: white;
+    font-size: 14px;
+    font-family: 'Urbanist', sans-serif;
+
+}
+
+.footerlogo {
+    display: grid;
+    height: 90.9px;
+    width: 120.0375px;
+    padding: 10px;
+    margin-bottom: 20px;
+    justify-self: center;
+}
